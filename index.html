@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Encrypt</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body onload="inicio()">
+    <div class="contenedor">
+        <div class="logo">
+            <img src="./image/logo.svg">
+        </div>
+        <section class="home"></section>
+        <form id="forma" method="post" action="">
+        
+            <div class="caja1 col-sm" id="box1">
+
+            </div>
+            <div class="caja2 col-sm">
+                <input type="text" id="texto1"></input>
+
+                <button type="button" class="boton3" id="btn" onclick="copiarMensaje()">
+                    <p id="action">Copiar</p>
+                </button>
+            </div>
+            <div class="botones">
+                <button type="button" class="boton1" onclick="encriptarMensaje()">
+                    <p>Encriptar</p>
+                </button>
+                <button type="button" class="boton2" onclick="desencriptarMensaje()">
+                    <p>Desencriptar</p>
+                </button>
+            </div>
+        
+        </form>
+        </section>
+        <footer class="footer">
+            <p>Copyright © 2022 by Jaime Armira</p>
+        </footer>
+        <script src="./js/app.js"></script>
+    </div>
+</body>
+
+</html>
