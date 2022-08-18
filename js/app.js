@@ -1,6 +1,7 @@
 function encriptarMensaje(resultado) {
     const encriptar = document.getElementById('texto1').value;
-    const encriptado = encriptar.replace(/e/gi, 'enter').replace(/i/gi, 'imes').replace(/a/gi, 'ai').replace(/o/gi, 'ober').replace(/u/gi, 'ufat');
+    let encriptar1=encriptar.toLowerCase();
+    const encriptado = encriptar1.replace(/e/gi, 'enter').replace(/i/gi, 'imes').replace(/a/gi, 'ai').replace(/o/gi, 'ober').replace(/u/gi, 'ufat');
     document.getElementById("box1").innerHTML ="<p class=\"info\" id=\"texto2\">" +encriptado+"</p>" ;
     document.getElementById ("texto1").value="";
 }
@@ -8,7 +9,8 @@ function encriptarMensaje(resultado) {
 
 function desencriptarMensaje(resultado){
     const desencriptar= document.getElementById ("texto1").value;
-    const desencriptado= desencriptar.replace(/ai/gi, 'a').replace(/enter/gi, 'e').replace(/imes/gi, 'i').replace(/ober/gi, 'o').replace(/ufat/gi, 'u');
+    let desencriptar1=desencriptar.toLowerCase();
+    const desencriptado= desencriptar1.replace(/ai/gi, 'a').replace(/enter/gi, 'e').replace(/imes/gi, 'i').replace(/ober/gi, 'o').replace(/ufat/gi, 'u');
     document.getElementById("box1").innerHTML ="<p class=\"info\" id=\"texto2\">" +desencriptado+"</p>" ; 
     document.getElementById ("texto1").value="";
 }
